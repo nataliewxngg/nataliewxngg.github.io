@@ -13,6 +13,9 @@
 
   --color-button-bg: #eae8db;
   --color-button-bg-dark: #333333;
+
+  --color-button-bg: #eae8db;
+  --color-button-bg-dark: #333333;
 }
 
 :root {
@@ -26,9 +29,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
