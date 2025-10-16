@@ -13,13 +13,10 @@
 
   --color-button-bg: #eae8db;
   --color-button-bg-dark: #333333;
-
-  --color-button-bg: #eae8db;
-  --color-button-bg-dark: #333333;
 }
 
 :root {
-  font-family: "Zalando Sans SemiExpanded", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Zalando Sans SemiExpanded', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -27,11 +24,4 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-button {
-  border: none;
-  border-radius: 20px;
-  padding: 8px 16px;
-  cursor: pointer;
 }
