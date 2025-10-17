@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 export default function App() {
 
@@ -17,13 +17,8 @@ export default function App() {
                     min-h-screen`}>
       
         {/* Header */}
-        <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-      
-        {/* <section className={`${isDarkMode ? 'dark' : ''} bg-bg dark:bg-bg-dark text-primary dark:text-primary-dark py-10`}>
-            <h1 className='text-[10rem] leading-[0.8] font-bold'>Natalie <br></br><span>Wong</span></h1>
-            <p className='mt-10 text-3xl font-extralight'>Aspiring <span className='text-secondary dark:text-secondary-dark'>full-stack developer</span> with a passion for creating web applications and discovering new technologies.</p>
-        </section> */}
-      
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        
       </main> 
     </>
   )
