@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 export default function App() {
 
   // Dark mode state
-  const [isDarkMode, setIsDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+    // useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   function toggleDarkMode() {
     setIsDarkMode(isDarkMode => !isDarkMode);
   }
@@ -12,13 +13,17 @@ export default function App() {
   return (
     <>
       {/* Homepage - Hero */}
-      <main
-        className={`${isDarkMode ? 'dark' : ''} bg-bg dark:bg-bg-dark text-primary dark:text-primary-dark 
-                    min-h-screen`}>
+      <main className={`${isDarkMode ? 'dark' : ''} 
+                      bg-bg 
+                      dark:bg-bg-dark 
+                      text-primary 
+                      dark:text-primary-dark
+                      min-h-screen
+                      w-full`}>
       
-        {/* Header */}
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        
+        {/* Navbar */}
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />  
+
       </main> 
     </>
   )
