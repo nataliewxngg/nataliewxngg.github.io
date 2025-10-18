@@ -1,7 +1,6 @@
-// import moonSVG from '../assets/moon.svg'
-// import sunSVG from '../assets/sun.svg'
+import moonSVG from '../../assets/moon.svg';
+import sunSVG from '../../assets/sun.svg';
 
-import ThemeButton from './ThemeButton';
 import NavLinks from './NavLinks';
 
 export default function Navbar(props) {
@@ -9,7 +8,13 @@ export default function Navbar(props) {
         <nav className='sticky w-full top-3 md:top-5 flex justify-around items-center'>
 
             {/* Dark/Light mode button */}
-            <ThemeButton toggleDarkMode={props.toggleDarkMode} isDarkMode={props.isDarkMode} />
+            <button onClick={props.toggleDarkMode}>
+                <img
+                    src={props.isDarkMode ? sunSVG : moonSVG} 
+                    alt={props.isDarkMode ? 'Sun' : 'Moon'} 
+                    className='w-10 h-10 cursor-pointer'
+                />
+            </button>
 
             {/* Nav links */}
             <NavLinks executeScroll={props.executeScroll} />
