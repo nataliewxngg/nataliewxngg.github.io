@@ -1,10 +1,9 @@
 function Home(props) {
     return (
-        <section className='relative min-h-screen font-semibold ml-5 self-start mb-30'
+        <section className='relative min-h-screen w-full font-semibold pl-5 self-start'
                  ref={props.ref}>
 
-            <h1 className='absolute bottom-10
-                           '>
+            <h1 className='absolute bottom-10'>
                 
                 <span className='block leading-[0.65]
                                  2xl:text-[24rem]

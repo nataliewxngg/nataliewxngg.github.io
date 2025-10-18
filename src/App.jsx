@@ -33,7 +33,6 @@ export default function App() {
                       dark:text-primary-dark
                       min-h-screen
                       w-full
-                      
                       flex
                       flex-col
                       justify-center
@@ -48,7 +47,7 @@ export default function App() {
 
         <Home ref={setRef('home')} />
 
-        <section ref={setRef('about')}>
+        <section ref={setRef('about')} className='bg-white'>
           <h1 className='text-[20rem]'>About section</h1>
         </section>
 
