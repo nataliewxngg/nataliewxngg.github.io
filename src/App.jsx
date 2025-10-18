@@ -5,26 +5,21 @@ export default function App() {
 
   // Dark mode state
   const [isDarkMode, setIsDarkMode] = useState(false);
-    // useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+                                      // useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   function toggleDarkMode() {
     setIsDarkMode(isDarkMode => !isDarkMode);
   }
 
   // Scroll to Home ref
-  const homeRef = useRef(null);
-  function scrollToHome() {
-    homeRef.current.scrollIntoView();
+  const sectionRef = useRef({});
+  function setRef(name) {
+    return el => { sectionRef.current[name] = el; };
   }
 
-  // Scroll to About ref
-  const aboutRef = useRef(null);
-  function scrollToAbout() {
-    aboutRef.current.scrollIntoView();
-  }
-
-  const projectsRef = useRef(null);
-  function scrollToProjects() {
-    projectsRef.current.scrollIntoView();
+  function scrollTo(name) {
+    const el = sectionRef.current[name];
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -39,17 +34,21 @@ export default function App() {
                       w-full`}>
       
         {/* Navbar */}
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} executeScroll={[scrollToHome, scrollToAbout, scrollToProjects]} />  
+        <Navbar
+          toggleDarkMode={toggleDarkMode}
+          isDarkMode={isDarkMode}
+          executeScroll={[() => scrollTo('home'), () => scrollTo('about'), () => scrollTo('projects')]}
+        />
 
-        <section ref={homeRef}>
+        <section ref={setRef('home')}>
           <h1 className='text-[20rem]'>Home section</h1>
         </section>
 
-        <section ref={aboutRef}>
+        <section ref={setRef('about')}>
           <h1 className='text-[20rem]'>About section</h1>
         </section>
 
-        <section ref={projectsRef}>
+        <section ref={setRef('projects')}>
           <h1 className='text-[20rem]'>Projects section</h1>
 
         </section>
