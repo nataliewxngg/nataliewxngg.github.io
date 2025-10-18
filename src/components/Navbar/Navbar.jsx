@@ -5,7 +5,7 @@ import NavLinks from './NavLinks';
 
 export default function Navbar(props) {
     return (
-        <nav className='sticky w-full top-3 md:top-5 flex justify-around items-center'>
+        <nav className='fixed z-1 w-full top-3 md:top-5 flex justify-between 2xl:px-50 lg:px-40 md:px-10 px-5 items-center'>
 
             {/* Dark/Light mode button */}
             <button onClick={props.toggleDarkMode}>

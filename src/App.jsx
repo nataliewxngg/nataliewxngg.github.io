@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
 
 export default function App() {
 
@@ -31,7 +32,12 @@ export default function App() {
                       text-primary 
                       dark:text-primary-dark
                       min-h-screen
-                      w-full`}>
+                      w-full
+                      
+                      flex
+                      flex-col
+                      justify-center
+                      items-center`}>
       
         {/* Navbar */}
         <Navbar
@@ -40,9 +46,7 @@ export default function App() {
           executeScroll={[() => scrollTo('home'), () => scrollTo('about'), () => scrollTo('projects')]}
         />
 
-        <section ref={setRef('home')}>
-          <h1 className='text-[20rem]'>Home section</h1>
-        </section>
+        <Home ref={setRef('home')} />
 
         <section ref={setRef('about')}>
           <h1 className='text-[20rem]'>About section</h1>
