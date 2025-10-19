@@ -1,27 +1,13 @@
 function Home(props) {
     return (
-        <section className='relative min-h-screen font-semibold ml-5 self-start mb-30'
+        <section className='relative min-h-screen w-full tracking-tighter pl-5 self-start
+                            2xl:text-[16rem] xl:text-[13rem] lg:text-[10rem] md:text-9xl sm:text-8xl text-7xl'
                  ref={props.ref}>
 
-            <h1 className='absolute bottom-10
-                           '>
+            <h1 className='absolute bottom-7'>
                 
-                <span className='block leading-[0.65]
-                                 2xl:text-[24rem]
-                                 xl:text-[20rem]
-                                 lg:text-[16rem]
-                                 md:text-[13rem]
-                                 sm:text-[10rem]
-                                 text-8xl
-                                 '>Natalie</span>
-                
-                <span className='block font-medium italic text-secondary dark:text-secondary-dark
-                                 2xl:text-[18rem]
-                                 xl:text-[14rem]
-                                 lg:text-[12rem] 
-                                 md:text-[10rem]
-                                 sm:text-8xl
-                                 text-7xl'>Wong</span>
+                <span>Natalie</span>
+                <span className='text-secondary dark:text-secondary-dark'>Wong</span>
                 
             </h1>
 
