@@ -5,10 +5,8 @@ function Home(props) {
                  ref={props.ref}>
 
             <h1 className='absolute bottom-7'>
-                
                 <span>Natalie</span>
                 <span className='text-secondary dark:text-secondary-dark'>Wong</span>
-                
             </h1>
 
         </section>
