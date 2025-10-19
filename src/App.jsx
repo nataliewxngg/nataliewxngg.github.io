@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
+import About from './components/About/About';
+import Project from './components/Projects/Projects';
 
 export default function App() {
 
@@ -46,15 +48,8 @@ export default function App() {
         />
 
         <Home ref={setRef('home')} />
-
-        <section ref={setRef('about')} className='bg-white'>
-          <h1 className='text-[20rem]'>About section</h1>
-        </section>
-
-        <section ref={setRef('projects')}>
-          <h1 className='text-[20rem]'>Projects section</h1>
-
-        </section>
+        <About ref={setRef('about')} />
+        <Project ref={setRef('projects')} />
       </main> 
     </>
   )
