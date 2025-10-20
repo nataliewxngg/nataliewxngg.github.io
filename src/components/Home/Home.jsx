@@ -1,7 +1,7 @@
 function Home(props) {
     return (
         <section className='relative min-h-screen w-full tracking-tighter pl-5 self-start
-                            2xl:text-[16rem] xl:text-[13rem] lg:text-[10rem] md:text-9xl sm:text-8xl text-7xl'
+                            2xl:text-[16rem] xl:text-[13rem] lg:text-[10rem] md:text-9xl sm:text-8xl text-6xl'
                  ref={props.ref}>
 
             <h1 className='absolute bottom-7'>
