@@ -48,7 +48,7 @@ export default function App() {
 
         <Home ref={setRef('home')} isDarkMode={isDarkMode} />
         <About ref={setRef('about')} />
-        <Project ref={setRef('projects')} />
+        {/* <Project ref={setRef('projects')} /> */}
       </main> 
     </>
   )
