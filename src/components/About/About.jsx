@@ -13,7 +13,7 @@ function About(props) {
                             px-10'
                 ref={props.ref}>
 
-            <p className="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl">
+            {/* <p className="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl">
                 I love to mess around with new technologies <br />and build elegant, user-centric websites.
             </p>
 
@@ -22,7 +22,7 @@ function About(props) {
                            2xl:my-40 xl:my-30 md:my-20 my-15
                            bg-cover bg-[center_20%] rounded-2xl mx-auto'
                 style={{ backgroundImage: `url(${myPortrait})` }}
-            />
+            /> */}
 
             {/* TODO: REMOVE - placeholder text */}
             <p className="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl">
