@@ -7,8 +7,7 @@ import Project from './components/Projects/Projects';
 export default function App() {
 
   // Dark mode state
-  const [isDarkMode, setIsDarkMode] = useState(false);
-                                      // useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isDarkMode, setIsDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
   function toggleDarkMode() {
     setIsDarkMode(isDarkMode => !isDarkMode);
   }
@@ -47,7 +46,7 @@ export default function App() {
           executeScroll={[() => scrollTo('home'), () => scrollTo('about'), () => scrollTo('projects')]}
         />
 
-        <Home ref={setRef('home')} />
+        <Home ref={setRef('home')} isDarkMode={isDarkMode} />
         <About ref={setRef('about')} />
         <Project ref={setRef('projects')} />
       </main> 

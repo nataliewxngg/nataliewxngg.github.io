@@ -2,7 +2,7 @@ import myPortrait from '../../assets/me.jpg'
 
 function About(props) {
     return (
-        <section className='bg-white dark:bg-neutral-500 w-full 
+        <section className='w-full 
                             2xl:py-40
                             xl:py-30
                             md:py-20
