@@ -4,6 +4,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Project from './components/Projects/Projects';
 
+import 'aos/dist/aos.css';
+
 export default function App() {
 
   // Dark mode state
