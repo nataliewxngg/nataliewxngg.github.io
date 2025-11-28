@@ -12,9 +12,6 @@ import galleryImg5 from '../../assets/galleryImgs/5.JPG';
 import galleryImg6 from '../../assets/galleryImgs/6.JPG';
 import galleryImg7 from '../../assets/galleryImgs/7.JPG';
 import galleryImg8 from '../../assets/galleryImgs/8.JPG';
-import galleryImg9 from '../../assets/galleryImgs/9.JPG';
-import galleryImg10 from '../../assets/galleryImgs/10.JPG';
-import galleryImg11 from '../../assets/galleryImgs/11.JPG';
 
 import AOS from 'aos';
 
@@ -22,6 +19,12 @@ function About(props) {
     useEffect(() => {
         AOS.init({duration:2000});
     }, []);
+
+    let colsCount;
+    let rowsCount;
+    useEffect(() => {
+        colsCount=window.innerWidth/100;
+    }, [window.innerWidth])
 
     return (
         <section className='w-full 
@@ -58,17 +61,14 @@ function About(props) {
 
             {/* Dark Mode Gallery */}
             {props.isDarkMode && <Gallery
-                img1={galleryImg1} img1Span={2} img1AlignSelf='flex-end'
-                img2={galleryImg2} img2Span={1} img2AlignSelf='flex-end'
-                img3={galleryImg3} img3Span={1} img3AlignSelf='flex-end'
-                img4={galleryImg4} img4Span={1} img4AlignSelf='flex-end'
-                img5={galleryImg5} img5Span={1} img5AlignSelf='flex-end'
-                img6={galleryImg6} img6Span={1} img6AlignSelf='flex-end'
-                img7={galleryImg7} img7Span={2} img7AlignSelf='flex-start'
-                img8={galleryImg8} img8Span={1} img8AlignSelf='flex-start'
-                img9={galleryImg9} img9Span={1} img9AlignSelf='flex-start'
-                img10={galleryImg10} img10Span={2} img10AlignSelf='flex-start'
-                img11={galleryImg11} img11Span={1} img11AlignSelf='flex-start'
+                img1={galleryImg1}
+                img2={galleryImg2}
+                img3={galleryImg3}
+                img4={galleryImg4}
+                img5={galleryImg5}
+                img6={galleryImg6}
+                img7={galleryImg7}
+                img8={galleryImg8}
             />}
 
         </section>

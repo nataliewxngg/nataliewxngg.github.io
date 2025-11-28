@@ -11,9 +11,9 @@ function GalleryImg(props) {
     return (
         <img
             src={props.img}
-            className={props.className ?? 'w-full h-auto object-cover'}
+            className='w-full h-auto object-cover'
             style={{ gridColumn: `span ${span}`, alignSelf: props.alignSelf }}
-            data-aos={props.fade == 'r' ? 'fade-right' : 'fade-left'}
+            data-aos={ props.fade }
             alt={props.alt ?? ''}
         />
     );
