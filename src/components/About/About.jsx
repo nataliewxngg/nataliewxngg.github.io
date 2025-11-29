@@ -47,20 +47,17 @@ function About(props) {
             </p>
             <TechStack />
 
-            {/* Light Mode Image */}
-            {
-                !props.isDarkMode &&
-                <div
-                    className='2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
+            <div
+                className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
                             2xl:mt-25 xl:mt-15 md:mt-10 my-5
-                            bg-cover bg-[center_20%] rounded-2xl'
-                    style={{ backgroundImage: `url(${myPortrait})` }}
-                    data-aos='fade-up'
-                />   
-            }
+                            bg-cover bg-[center_20%] rounded-2xl
+                            ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
+                style={{ backgroundImage: `url(${myPortrait})` }}
+                data-aos='fade-up'
+            />  
 
-            {/* Dark Mode Gallery */}
-            {props.isDarkMode && <Gallery
+            {/* Gallery */}
+            {/* <Gallery
                 img1={galleryImg1}
                 img2={galleryImg2}
                 img3={galleryImg3}
@@ -69,7 +66,7 @@ function About(props) {
                 img6={galleryImg6}
                 img7={galleryImg7}
                 img8={galleryImg8}
-            />}
+            /> */}
 
         </section>
     );
