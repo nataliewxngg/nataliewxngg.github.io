@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 import TechStack from './TechStack';
 import Gallery from './Gallery';
+import Experiences from './Experiences';
 
 import myPortrait from '../../assets/me.jpg';
 import galleryImg1 from '../../assets/galleryImgs/1.JPG';
@@ -49,12 +50,18 @@ function About(props) {
 
             <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
-                            2xl:mt-25 xl:mt-15 md:mt-10 my-5
+                            2xl:my-25 xl:my-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
                 style={{ backgroundImage: `url(${myPortrait})` }}
                 data-aos='fade-up'
             />  
+
+            <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
+            data-aos='fade-up'>
+                Experience
+            </p>
+            <Experiences />
 
             {/* Gallery */}
             {/* <Gallery

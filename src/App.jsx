@@ -51,6 +51,10 @@ export default function App() {
         <Home ref={setRef('home')} isDarkMode={isDarkMode} />
         <About ref={setRef('about')} isDarkMode={isDarkMode} />
         {/* <Project ref={setRef('projects')} /> */}
+
+        <footer className='h-50'>
+
+        </footer>
       </main> 
     </>
   )
