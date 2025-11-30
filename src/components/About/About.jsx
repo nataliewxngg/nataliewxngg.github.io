@@ -22,12 +22,6 @@ function About(props) {
         AOS.init({duration:2000});
     }, []);
 
-    let colsCount;
-    let rowsCount;
-    useEffect(() => {
-        colsCount=window.innerWidth/100;
-    }, [window.innerWidth])
-
     return (
         <section className='w-full 
                             2xl:py-25
@@ -49,14 +43,23 @@ function About(props) {
             </p>
             <TechStack />
 
-            <div
+            {props.isDarkMode && <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
                             2xl:mt-25 xl:mt-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
-                style={{ backgroundImage: props.isDarkMode ? `url(${darkModeAboutImg})` : `url(${lightModeAboutImg})` }}
+                style={{ backgroundImage: `url(${darkModeAboutImg})`}}
                 data-aos='fade-up'
-            />  
+            />}  
+
+            {!props.isDarkMode && <div
+                className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
+                            2xl:mt-25 xl:mt-15 md:my-10 my-5
+                            bg-cover bg-[center_20%] rounded-2xl
+                            ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
+                style={{ backgroundImage: `url(${lightModeAboutImg})` }}
+                data-aos='fade-up'
+            />  }
 
             {/* <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
             data-aos='fade-up'>
