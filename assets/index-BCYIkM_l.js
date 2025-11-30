@@ -79,7 +79,7 @@ Error generating stack: `+e.message+`
                             flex\r
                             flex-col\r
                             gap-3`,ref:A.ref,children:[et.jsxs("p",{className:"2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl","data-aos":"fade-up",children:["I build ",et.jsx("span",{className:"text-secondary dark:text-secondary-dark",children:"elegant, user-centric"})," websites out of passion."]}),et.jsx(gv,{}),et.jsx("div",{className:`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
-                            2xl:mt-25 xl:mt-15 md:mt-10 mt-5
+                            2xl:mt-25 xl:mt-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${A.isDarkMode?"shadow-[0_0px_150px_rgba(255,255,255,0.35)]":"shadow-[0_0px_150px_rgba(0,0,0,0.2)]"}`,style:{backgroundImage:A.isDarkMode?`url(${Ov})`:`url(${Ev})`},"data-aos":"fade-up"})]})}function zv(){const[A,rt]=zu.useState(window.matchMedia("(prefers-color-scheme: dark)").matches);function N(){rt(j=>!j)}const c=zu.useRef({});function b(j){return K=>{c.current[j]=K}}function z(j){const K=c.current[j];K&&K.scrollIntoView({behavior:"smooth"})}return et.jsx(et.Fragment,{children:et.jsxs("main",{className:`${A?"dark":""} 
                       bg-bg 
