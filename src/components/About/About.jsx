@@ -4,7 +4,8 @@ import TechStack from './TechStack';
 import Gallery from './Gallery';
 import Experiences from './Experiences';
 
-import myPortrait from '../../assets/me.jpg';
+import lightModeAboutImg from '../../assets/lightModeAboutImg.jpg';
+import darkModeAboutImg from '../../assets/darkModeAboutImg.jpg';
 import galleryImg1 from '../../assets/galleryImgs/1.JPG';
 import galleryImg2 from '../../assets/galleryImgs/2.JPG';
 import galleryImg3 from '../../assets/galleryImgs/3.JPG';
@@ -53,7 +54,7 @@ function About(props) {
                             2xl:my-25 xl:my-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
-                style={{ backgroundImage: `url(${myPortrait})` }}
+                style={{ backgroundImage: props.isDarkMode ? `url(${darkModeAboutImg})` : `url(${lightModeAboutImg})` }}
                 data-aos='fade-up'
             />  
 
