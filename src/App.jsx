@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -14,7 +14,7 @@ export default function App() {
     setIsDarkMode(isDarkMode => !isDarkMode);
   }
 
-  // Scroll to Home ref
+  // Scroll to Home, About, Projects ref
   const sectionRef = useRef({});
   function setRef(name) {
     return el => { sectionRef.current[name] = el; };
@@ -52,8 +52,21 @@ export default function App() {
         <About ref={setRef('about')} isDarkMode={isDarkMode} />
         {/* <Project ref={setRef('projects')} /> */}
 
-        <footer className='h-50'>
+        {/* Footer */}
+        <footer className='bg-secondary-bg dark:bg-secondary-bg-dark w-full 
+                             flex flex-col gap-2
+                             2xl:py-10 xl:py-8 py-7
+                             2xl:px-30 xl:px-20 md:px-15 px-10
+                             2xl:text-[0.9rem] lg:text-[0.8rem] md:text-[0.7rem] text-[0.6rem]'
+                data-aos='fade-left'>
+          <a href='mailto:natalieltwong@gmail.com'>natalieltwong@gmail.com</a>
 
+          <div className='flex flex-col'>
+            <a href='https://github.com/nataliewxngg'>Github</a>
+            <a href='https://www.linkedin.com/in/nataliewxngg/'>LinkedIn</a>
+          </div>
+
+          <p className='text-bg dark:text-bg-dark 2xl:text-[0.8rem] lg:text-[0.7rem] md:text-[0.6rem] text-[0.5rem]'>@ 2026 - All Rights Reserved</p>
         </footer>
       </main> 
     </>

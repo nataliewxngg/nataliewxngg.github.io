@@ -20,7 +20,7 @@ export default function Navbar(props) {
             <NavLinks executeScroll={props.executeScroll} />
 
             {/* Contact button */}
-            <button className='bg-button-bg dark:bg-button-bg-dark mr-3'>
+            <button className='bg-secondary-bg dark:bg-secondary-bg-dark mr-3'>
                 <a href='mailto:natalieltwong@gmail.com'>
                     contact
                 </a>
