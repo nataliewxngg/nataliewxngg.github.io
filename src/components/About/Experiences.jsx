@@ -1,6 +1,8 @@
 import Experience from './Experience';
 
 import fordImg1 from '../../assets/experiences/ford/1.jpg';
+import fordImg2 from '../../assets/experiences/ford/2.jpg';
+import fordImg3 from '../../assets/experiences/ford/3.jpg';
 
 function Experiences(props) {
     const experiences = [
@@ -9,15 +11,15 @@ function Experiences(props) {
             title: 'Networking Software Engineer',
             company: 'Ford Motor Company',
             date: 'Sept. 2025 - Dec. 2025',
-            img: fordImg1
+            img: [fordImg1, fordImg2, fordImg3]
         },
-        {
-            id: '2',
-            title: 'STEM Innovation Trends Research Assistant',
-            company: 'BIASafe AI',
-            date: 'Jan. 2025 - Apr. 2025',
-            img: fordImg1
-        }
+        // {
+        //     id: '2',
+        //     title: 'STEM Innovation Trends Research Assistant',
+        //     company: 'BIASafe AI',
+        //     date: 'Jan. 2025 - Apr. 2025',
+        //     img: [fordImg1]
+        // }
     ];
 
     function experiencesMapped() {
@@ -33,7 +35,7 @@ function Experiences(props) {
         );
     }
 
-    return <article className='flex flex-row'>
+    return <article className='flex flex-col gap-2'>
         {experiencesMapped()}
     </article>
 }

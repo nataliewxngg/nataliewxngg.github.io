@@ -32,3 +32,7 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
+
+img { 
+  overflow-clip-margin: unset;
+}

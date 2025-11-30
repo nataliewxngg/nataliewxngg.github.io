@@ -57,11 +57,11 @@ function About(props) {
                 data-aos='fade-up'
             />  
 
-            <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
+            {/* <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
             data-aos='fade-up'>
                 Experience
             </p>
-            <Experiences />
+            <Experiences /> */}
 
             {/* Gallery */}
             {/* <Gallery

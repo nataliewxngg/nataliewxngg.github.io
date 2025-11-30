@@ -9,19 +9,21 @@ function Experience(props) {
     }, []);
 
     function imgsMapped() {
-        return props.imgs.map((img, i) => (
-            <img key={i} src={img} alt={`experience-img-${i}`} />
+        return props.img.map((img, i) => (
+            // TODO: Fill out alt for img 
+            <img key={i} src={img} alt='' className='h-full w-full object-cover' />
         ));
     }
 
-    return <div data-aos='fade-up' className='flex odd:flex-row even:flex-row-reverse justify-between items-center gap-1 border-r-1 last:border-r-0 px-10 first:pl-0 last:pr-0 border-secondary dark:border-secondary-dark'>
+    return <div data-aos='fade-up' className='flex flex-row items-center gap-20'>
         <div>
             <h1 className='italic'>{props.title}</h1>
             <p>{props.company}</p>
             <p>{props.date}</p>
+        </div>
 
-            {/* TODO: Fill out alt */}
-            {/* <img src={props.img} alt='' /> */}
+        <div data-aos='fade-left' className='grid grid-cols-3 auto-rows-[17rem] gap-1 pl-20 border-l-1 border-secondary dark:border-secondary-dark w-full'>
+            {imgsMapped()}
         </div>
     </div>
 }
