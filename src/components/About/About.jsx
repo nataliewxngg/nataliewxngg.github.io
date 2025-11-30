@@ -51,7 +51,7 @@ function About(props) {
 
             <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
-                            2xl:mt-25 xl:mt-15 md:mt-10 mt-5
+                            2xl:mt-25 xl:mt-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
                 style={{ backgroundImage: props.isDarkMode ? `url(${darkModeAboutImg})` : `url(${lightModeAboutImg})` }}
