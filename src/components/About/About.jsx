@@ -1,19 +1,9 @@
 import { useEffect } from 'react';
 
 import TechStack from './TechStack';
-import Gallery from './Gallery';
-import Experiences from './Experiences';
 
 import lightModeAboutImg from '../../assets/lightModeAboutImg.jpg';
 import darkModeAboutImg from '../../assets/darkModeAboutImg.jpg';
-import galleryImg1 from '../../assets/galleryImgs/1.JPG';
-import galleryImg2 from '../../assets/galleryImgs/2.JPG';
-import galleryImg3 from '../../assets/galleryImgs/3.JPG';
-import galleryImg4 from '../../assets/galleryImgs/4.JPG';
-import galleryImg5 from '../../assets/galleryImgs/5.JPG';
-import galleryImg6 from '../../assets/galleryImgs/6.JPG';
-import galleryImg7 from '../../assets/galleryImgs/7.JPG';
-import galleryImg8 from '../../assets/galleryImgs/8.JPG';
 
 import AOS from 'aos';
 
@@ -43,6 +33,7 @@ function About(props) {
             </p>
             <TechStack />
 
+            {/* TODO: Refactor the About img to conditionally change image on theme change */}
             {props.isDarkMode && <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
                             2xl:mt-25 xl:mt-15 md:my-10 my-5
@@ -60,24 +51,6 @@ function About(props) {
                 style={{ backgroundImage: `url(${lightModeAboutImg})` }}
                 data-aos='fade-up'
             />  }
-
-            {/* <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
-            data-aos='fade-up'>
-                Experience
-            </p>
-            <Experiences /> */}
-
-            {/* Gallery */}
-            {/* <Gallery
-                img1={galleryImg1}
-                img2={galleryImg2}
-                img3={galleryImg3}
-                img4={galleryImg4}
-                img5={galleryImg5}
-                img6={galleryImg6}
-                img7={galleryImg7}
-                img8={galleryImg8}
-            /> */}
 
         </section>
     );
