@@ -14,10 +14,10 @@ function About(props) {
 
     return (
         <section className='w-full 
-                            2xl:py-25
-                            xl:py-15
-                            md:py-10
-                            py-5
+                            2xl:pt-25
+                            xl:pt-15
+                            md:pt-10
+                            pt-5
                             2xl:px-30
                             xl:px-20
                             md:px-15
@@ -36,7 +36,7 @@ function About(props) {
             {/* TODO: Refactor the About img to conditionally change image on theme change */}
             {props.isDarkMode && <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
-                            2xl:mt-25 xl:mt-15 md:my-10 my-5
+                            2xl:my-25 xl:my-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
                 style={{ backgroundImage: `url(${darkModeAboutImg})`}}
@@ -45,7 +45,7 @@ function About(props) {
 
             {!props.isDarkMode && <div
                 className={`2xl:h-150 xl:h-100 lg:h-80 md:h-50 sm:h-40 h-30
-                            2xl:mt-25 xl:mt-15 md:my-10 my-5
+                            2xl:my-25 xl:my-15 md:my-10 my-5
                             bg-cover bg-[center_20%] rounded-2xl
                             ${props.isDarkMode ? 'shadow-[0_0px_150px_rgba(255,255,255,0.35)]' : 'shadow-[0_0px_150px_rgba(0,0,0,0.2)]'}`}
                 style={{ backgroundImage: `url(${lightModeAboutImg})` }}

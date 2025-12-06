@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Project from './components/Projects/Projects';
+import Projects from './components/Projects/Projects';
 
 import 'aos/dist/aos.css';
 
@@ -50,7 +50,7 @@ export default function App() {
 
         <Home ref={setRef('home')} isDarkMode={isDarkMode} />
         <About ref={setRef('about')} isDarkMode={isDarkMode} />
-        {/* <Project ref={setRef('projects')} /> */}
+        <Projects ref={setRef('projects')} />
 
         {/* Footer */}
         <footer className='bg-secondary-bg dark:bg-secondary-bg-dark w-full 
