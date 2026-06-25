@@ -54,7 +54,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className='bg-secondary-bg dark:bg-secondary-bg-dark w-full 
-                             flex flex-col gap-2
+                             flex flex-col gap-2 items-start
                              2xl:py-10 xl:py-8 py-7
                              2xl:px-30 xl:px-20 md:px-15 px-10
                              2xl:text-[0.9rem] lg:text-[0.8rem] md:text-[0.7rem] text-[0.6rem]'
