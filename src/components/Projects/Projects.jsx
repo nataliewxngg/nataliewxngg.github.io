@@ -15,7 +15,7 @@ function Projects(props) {
     }, []);
 
     const items = [
-        { image: blinkyOnImg, label: 'BlinkON', link: '#' },
+        { image: blinkyOnImg, label: 'BlinkyON', link: '#' },
         { image: calculatorImg, label: 'Calculator', link: '#' },
         { image: chefClaudeImg, label: 'Chef Claude', link: '#' },
         { image: etchASketchImg, label: 'Etch-a-Sketch', link: '#' },
@@ -46,7 +46,7 @@ function Projects(props) {
             radius={16}
             orientation="horizontal"
         />
-        
+
     </section>
 }
 
