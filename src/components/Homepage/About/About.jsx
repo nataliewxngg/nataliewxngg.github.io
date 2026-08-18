@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 import TechStack from './TechStack';
 
-import lightModeAboutImg from '../../assets/lightModeAboutImg.jpg';
-import darkModeAboutImg from '../../assets/darkModeAboutImg.jpg';
+import lightModeAboutImg from '../../../assets/lightModeAboutImg.jpg';
+import darkModeAboutImg from '../../../assets/darkModeAboutImg.jpg';
 
 import AOS from 'aos';
 
@@ -29,7 +29,7 @@ function About(props) {
 
             <p className='2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-1xl'
             data-aos='fade-up'>
-                I build <span className='text-secondary dark:text-secondary-dark'>elegant, user-centric</span> websites out of passion.
+                Turning <span className='text-secondary dark:text-secondary-dark'>ideas</span> into <span className='text-secondary dark:text-secondary-dark'>reality</span>, one at a time.
             </p>
             <TechStack />
 

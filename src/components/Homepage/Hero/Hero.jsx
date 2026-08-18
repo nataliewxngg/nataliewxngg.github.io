@@ -1,5 +1,5 @@
-import lightModeBg from '../../assets/lightModeBg.gif';
-import darkModeBg from '../../assets/darkModeBg.gif';
+import lightModeBg from '../../../assets/lightModeBg.gif';
+import darkModeBg from '../../../assets/darkModeBg.gif';
 
 function Home(props) {
     return (
