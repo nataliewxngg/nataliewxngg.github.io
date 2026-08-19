@@ -32,7 +32,7 @@ const projectData = [
         label: 'Etch-a-Sketch',
         summary: 'A nostalgic web application that allows desktop users to create pixel art through an interactive browser experience.',
         highlights: ['HTML/CSS/JavaScript', 'DOM Manipulation', 'Interactive UI'],
-        link: '#'
+        link: 'https://github.com/nataliewxngg/etch-a-sketch'
     }
 ];
 
