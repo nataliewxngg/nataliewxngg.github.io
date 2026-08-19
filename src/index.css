@@ -38,3 +38,5 @@ button {
 a:hover {
   cursor: pointer;
 }
+
+.section-anchor { scroll-margin-top: 6rem; }

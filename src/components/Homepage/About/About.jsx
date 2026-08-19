@@ -13,7 +13,8 @@ function About(props) {
     }, []);
 
     return (
-        <section className='w-full 
+        <section className='section-anchor 
+                            w-full 
                             2xl:pt-25
                             xl:pt-15
                             md:pt-10
