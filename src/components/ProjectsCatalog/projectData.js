@@ -3,33 +3,35 @@ import calculatorImg from '../../assets/projects/calculatorImg.png';
 import chefClaudeImg from '../../assets/projects/chefClaudeImg.png';
 import etchASketchImg from '../../assets/projects/etchASketchImg.png';
 
+// Link can be replaced with '#' or '/placeholder'
+
 const projectData = [
     {
         image: blinkyOnImg,
         label: 'BlinkyON',
-        summary: 'A playful interface with bold motion and a clean visual rhythm.',
-        highlights: ['Responsive layout', 'Animated interactions', 'Polished landing page'],
-        link: '#'
+        summary: 'A dynamic, pausable single-player game that utilizes the arrow keys to navigate a vehicle through busy one-way traffic, built with Java Swing.',
+        highlights: ['Java Swing', 'OOP', 'Dynamic Gameplay'],
+        link: 'https://github.com/nataliewxngg/blinky-on'
     },
     {
         image: calculatorImg,
         label: 'Calculator',
-        summary: 'A compact calculator build focused on clarity, spacing, and easy input.',
-        highlights: ['Button-driven UI', 'Fast interactions', 'Minimal visual noise'],
-        link: '#'
+        summary: 'A compact calculator engineered using vanilla HTML, CSS, and JavaScript, featuring basic arithmetic functionality with robust error handling, animations, and a comprehensive UI that provides a promising user experience.',
+        highlights: ['HTML/CSS/JavaScript', 'DOM Manipulation', 'Event Handling'],
+        link: 'https://github.com/nataliewxngg/calculator'
     },
     {
         image: chefClaudeImg,
         label: 'Chef Claude',
-        summary: 'An AI-assisted cooking concept with a simple, friendly presentation.',
-        highlights: ['Conversational flow', 'Recipe-oriented layout', 'Clear call to action'],
-        link: '#'
+        summary: 'A web application powered by OpenAI\'s gpt-oss-120b that recommends recipes based on a list of available ingredients inputted by the user — driven by conditional rendering, states, refs, and secure api integration through netlify deployment.',
+        highlights: ['React', 'API Integration', 'AI-powered'],
+        link: 'https://github.com/nataliewxngg/react-course'
     },
     {
         image: etchASketchImg,
         label: 'Etch-a-Sketch',
-        summary: 'A nostalgic drawing toy turned into an interactive browser experience.',
-        highlights: ['Canvas-style interaction', 'Instant feedback', 'Playful exploration'],
+        summary: 'A nostalgic web application that allows desktop users to create pixel art through an interactive browser experience.',
+        highlights: ['HTML/CSS/JavaScript', 'DOM Manipulation', 'Interactive UI'],
         link: '#'
     }
 ];

@@ -27,6 +27,8 @@ export default function ProjectPreview({ activeProject }) {
 
                 <a
                     href={activeProject.link}
+                    target='_blank'
+                    rel='noreferrer noopener'
                     className='inline-flex items-center rounded-full border border-secondary px-5 py-2 text-sm font-medium text-secondary transition hover:bg-secondary hover:text-white dark:border-secondary-dark dark:text-secondary-dark dark:hover:bg-secondary-dark dark:hover:text-bg-dark'
                 >
                     Open project
